@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .upload-container {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 320px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 30px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-file-upload {
+            display: inline-block;
+            padding: 10px 60px;
+            font-size: 15px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+       
+
+        #file-chosen {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 70px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Resume</h2>
+        <form action="{{ url_for('upload_resume') }}" method="post" enctype="multipart/form-data">
+            <label for="resume" class="custom-file-upload">Choose File</label>
+            <input type="file" id="resume" name="resume" required onchange="updateFileName()">
+            <div id="file-chosen">No file chosen</div>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    <script>
+        function updateFileName() {
+            const input = document.getElementById('resume');
+            const fileNameDisplay = document.getElementById('file-chosen');
+            fileNameDisplay.textContent = input.files.length > 0 ? input.files[0].name : "No file chosen";
+        }
+    </script>
+</body>
+</html>

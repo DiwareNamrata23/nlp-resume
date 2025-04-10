@@ -1,0 +1,11 @@
+Flask
+Werkzeug
+Jinja2
+python-docx
+PyMuPDF
+pdfminer.six
+PyPDF2
+spacy
+nltk
+numpy
+pandas

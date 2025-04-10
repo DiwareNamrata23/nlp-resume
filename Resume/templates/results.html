@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e90ff;
+        }
+
+        .container {
+            background-color: white;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        li strong {
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Extracted Resume Information</h1>
+
+        <h2>Full Text:</h2>
+        <pre>{{ resume_text }}</pre>
+
+        <h2>Extracted Key Information:</h2>
+        <ul>
+            <li><strong>Name:</strong> {{ extracted_info.name }}</li>
+            <li><strong>Email:</strong> {{ extracted_info.email }}</li>
+            <li><strong>Phone:</strong> {{ extracted_info.phone }}</li>
+            <li><strong>Education:</strong> {{ extracted_info.education }}</li>
+            <li><strong>Skills:</strong> {{ extracted_info.skills }}</li>
+            <li><strong>Experience:</strong> {{ extracted_info.experience }}</li>
+        </ul>
+
+        <!-- Suggest Job Role Button -->
+        <form action="{{ url_for('suggest_job') }}" method="post">
+            <input type="hidden" name="skills" value="{{ extracted_info.skills }}">
+            <button class="btn" type="submit">Suggest Job Role</button>
+        </form>
+    </div>
+</body>
+</html>

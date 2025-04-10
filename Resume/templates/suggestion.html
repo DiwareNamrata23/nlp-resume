@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggested Job</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            text-align: center;
+            padding: 60px;
+        }
+
+        .box {
+            background-color: white;
+            display: inline-block;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #1e90ff;
+        }
+
+        .job-role {
+            font-size: 22px;
+            color: green;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px 10px 0;
+            text-decoration: none;
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #006ad1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Suggested Job Role</h1>
+        <div class="job-role">{{ predicted_job }}</div>
+
+        <a href="/" class="button">Upload Another Resume</a>
+        <!-- <a href="/resumes" class="button">View All Resumes</a> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Resumes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Stored Resumes</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Education</th>
+            <th>Skills</th>
+            <th>Experience</th>
+        </tr>
+        {% for resume in resumes %}
+        <tr>
+            <td>{{ resume[0] }}</td>
+            <td>{{ resume[1] }}</td>
+            <td>{{ resume[2] }}</td>
+            <td>{{ resume[3] }}</td>
+            <td>{{ resume[4] }}</td>
+            <td>{{ resume[5] }}</td>
+            <td>{{ resume[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('index') }}">Go Back</a>
+</body>
+</html>
