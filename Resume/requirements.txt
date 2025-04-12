@@ -1,4 +1,7 @@
 Flask
+pdfminer.six
+python-docx
+spacy
 Werkzeug
 Jinja2
 python-docx

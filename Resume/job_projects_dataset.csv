@@ -1,0 +1,111 @@
+Job Role,Skill,Project
+Data Scientist,Python,Customer Churn Prediction
+Data Scientist,SQL,Sales Forecasting Model
+Data Scientist,Pandas,Loan Default Classifier
+Data Scientist,Scikit-learn,Image Classification App
+Data Scientist,Matplotlib,EDA on Titanic Dataset
+Data Scientist,Numpy,Stock Price Predictor
+Data Scientist,TensorFlow,Digit Recognition using CNN
+Data Scientist,Deep Learning,Medical Image Diagnosis
+Data Scientist,Big Data,Real-time Tweet Sentiment Analyzer
+Data Scientist,Data Cleaning,Airbnb Price Predictor
+Web Developer,HTML,Personal Portfolio
+Web Developer,CSS,Responsive Blog
+Web Developer,JavaScript,Todo List App
+Web Developer,React,Weather Forecast SPA
+Web Developer,Node.js,Real-time Chat App
+Web Developer,Express.js,RESTful API for Notes
+Web Developer,MongoDB,E-commerce Backend
+Web Developer,Flask,Online Quiz Platform
+Web Developer,Django,Multi-user Blog
+Web Developer,GraphQL,Recipe App
+Android Developer,Java,Student Attendance Tracker
+Android Developer,Kotlin,Fitness App
+Android Developer,SQLite,Offline Diary App
+Android Developer,Firebase,Food Ordering App
+Android Developer,Google Maps API,Local Event Finder
+Android Developer,RecyclerView,News Aggregator
+Android Developer,Camera API,Barcode Scanner
+Android Developer,Notifications,Reminder App
+Android Developer,Room Database,Expense Tracker
+Android Developer,Push Notifications,Weather Alerts App
+AI/ML Engineer,Python,Facial Emotion Detector
+AI/ML Engineer,OpenCV,Face Recognition App
+AI/ML Engineer,NLP,Resume Parser
+AI/ML Engineer,Transformers,Chatbot using BERT
+AI/ML Engineer,Speech Recognition,Voice-based Assistant
+AI/ML Engineer,YOLO,Object Detection in Traffic
+AI/ML Engineer,CNN,COVID Chest X-ray Classifier
+AI/ML Engineer,RNN,Text Generation Bot
+AI/ML Engineer,LSTM,Stock Trend Forecaster
+AI/ML Engineer,GAN,Face Aging Generator
+Machine Learning,Engineer,OpenCV,Face Recognition App
+Machine Learning,NLP,Resume Parser
+Machine Learning,Transformers,Chatbot using BERT
+Machine Learning,Speech Recognition,Voice-based Assistant
+Machine Learning,YOLO,Object Detection in Traffic
+Machine Learning,CNN,COVID Chest X-ray Classifier
+Machine Learning,RNN,Text Generation Bot
+Machine Learning,LSTM,Stock Trend Forecaster
+Machine Learning,GAN,Face Aging Generator
+Cybersecurity Analyst,Kali Linux,Penetration Testing Toolkit
+Cybersecurity Analyst,Burp Suite,Web App Vulnerability Scanner
+Cybersecurity Analyst,Nmap,Network Scanner Tool
+Cybersecurity Analyst,Wireshark,Traffic Analyzer
+Cybersecurity Analyst,Python,Keylogger
+Cybersecurity Analyst,SQL Injection,Website Audit Report
+Cybersecurity Analyst,Encryption,Secure Messaging App
+Cybersecurity Analyst,Firewall Configuration,Simulated Attack Defense
+Cybersecurity Analyst,OAuth,Secure Login System
+Cybersecurity Analyst,JWT,Token-based Auth App
+DevOps Engineer,Docker,Containerized Web App
+DevOps Engineer,Jenkins,CI/CD for Python App
+DevOps Engineer,GitHub Actions,Automated Deployment System
+DevOps Engineer,Terraform,Infrastructure Provisioning
+DevOps Engineer,Kubernetes,Microservices Orchestration
+DevOps Engineer,AWS,Serverless Architecture
+DevOps Engineer,Azure,Cloud Resource Monitor
+DevOps Engineer,Shell Scripting,Automated Backup Script
+DevOps Engineer,Prometheus,Monitoring Dashboard
+DevOps Engineer,Grafana,System Health Alerts
+UI/UX Designer,Figma,Mobile Banking UI
+UI/UX Designer,Adobe XD,E-learning App Design
+UI/UX Designer,Wireframing,Social Media App Blueprint
+UI/UX Designer,Prototyping,Doctor Booking UI
+UI/UX Designer,User Research,Survey-Based Feedback Design
+UI/UX Designer,Color Theory,Branding Revamp
+UI/UX Designer,Typography,Minimal Blog Template
+UI/UX Designer,Design Systems,Style Guide for Web App
+UI/UX Designer,Accessibility,Inclusive UI Redesign
+UI/UX Designer,Usability Testing,Travel App Optimization
+Business Analyst,Excel,Sales Dashboard
+Business Analyst,Power BI,Revenue Visualization
+Business Analyst,Tableau,Customer Segmentation
+Business Analyst,SQL,Inventory Management Insights
+Business Analyst,RFM Analysis,E-commerce Analysis
+Business Analyst,KPIs,Hospital Report Builder
+Business Analyst,Storytelling,HR Attrition Report
+Business Analyst,Agile,Sprint Progress Dashboard
+Business Analyst,BPMN,Loan Process Model
+Business Analyst,Stakeholder Analysis,Client Engagement Tracker
+Cloud Engineer,AWS S3,Cloud Storage Manager
+Cloud Engineer,AWS Lambda,Event Triggered Pipeline
+Cloud Engineer,GCP,Scalable File Uploader
+Cloud Engineer,Azure Functions,Serverless Feedback Collector
+Cloud Engineer,CI/CD Pipeline,Auto Deployment on Push
+Cloud Engineer,CloudFormation,Infra Automation
+Cloud Engineer,CloudWatch,Alert Management System
+Cloud Engineer,Docker on Cloud,Web App Containerizer
+Cloud Engineer,API Gateway,Secure Endpoint Gateway
+Cloud Engineer,IAM,Role-based Access Control
+Javascript Developer,DOM Manipulation,Todo List App
+Javascript Developer,Fetch API,Weather Forecast App
+Javascript Developer,Event Handling,Calculator Web App
+Javascript Developer,Local Storage,Quiz Application
+Javascript Developer,Timers,Typing Speed Test
+Javascript Developer,Date Object,Real-time Clock
+Javascript Developer,Form Validation,Form Validation App
+Javascript Developer,CRUD Operations,Notes Taking App
+Javascript Developer,Animations,Image Slider/Carousel
+Javascript Developer,setInterval,Digital Countdown Timer
+Javascript Developer,Conversion Logic,Unit Converter (Length, Temp, etc.)

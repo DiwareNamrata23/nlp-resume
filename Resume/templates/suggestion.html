@@ -8,37 +8,64 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f6f9;
             color: #333;
-            text-align: center;
             padding: 60px;
+            margin: 0;
         }
 
-        .box {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             background-color: white;
-            display: inline-block;
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         h1 {
             color: #1e90ff;
+            margin-bottom: 10px;
         }
 
         .job-role {
-            font-size: 22px;
-            color: green;
-            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e8b57;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #444;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .project-list li {
+            background-color: #f0f8ff;
+            margin: 10px 0;
+            padding: 12px 18px;
+            border-left: 5px solid #1e90ff;
+            border-radius: 6px;
+            font-size: 16px;
         }
 
         .button {
             display: inline-block;
-            margin: 20px 10px 0;
+            margin-top: 30px;
             text-decoration: none;
             background-color: #1e90ff;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 24px;
             border-radius: 6px;
             transition: background-color 0.3s ease;
+            font-size: 16px;
         }
 
         .button:hover {
@@ -47,12 +74,19 @@
     </style>
 </head>
 <body>
-    <div class="box">
+    <div class="container">
         <h1>Suggested Job Role</h1>
         <div class="job-role">{{ predicted_job }}</div>
 
+        <div class="section-title">Recommended Projects:</div>
+        <ul class="project-list">
+            {% for project in projects %}
+                <li>{{ project }}</li>
+            {% endfor %}
+        </ul>
+        
+    
         <a href="/" class="button">Upload Another Resume</a>
-        <!-- <a href="/resumes" class="button">View All Resumes</a> -->
     </div>
 </body>
 </html>
