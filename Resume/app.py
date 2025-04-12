@@ -21,7 +21,7 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # Save resume data to SQLite
-def save_to_db(name, email, phone, education, skills, experience, predicted_job):
+def save_to_db(name, email, phone, courses, skills, experience, predicted_job):
     conn = sqlite3.connect("resumes.db")
     cursor = conn.cursor()
     cursor.execute('''
@@ -30,16 +30,16 @@ def save_to_db(name, email, phone, education, skills, experience, predicted_job)
             name TEXT,
             email TEXT,
             phone TEXT,
-            education TEXT,
+            courses TEXT,
             skills TEXT,
             experience TEXT,
             predicted_job TEXT
         )
     ''')
     cursor.execute('''
-        INSERT INTO resumes (name, email, phone, education, skills, experience, predicted_job)
+        INSERT INTO resumes (name, email, phone, courses, skills, experience, predicted_job)
         VALUES (?, ?, ?, ?, ?, ?, ?)
-    ''', (name, email, phone, education, skills, experience, predicted_job))
+    ''', (name, email, phone, courses, skills, experience, predicted_job))
     conn.commit()
     conn.close()
 
@@ -84,13 +84,13 @@ def suggest_job():
     name = request.form.get("name", "Unknown")
     email = request.form.get("email", "Unknown")
     phone = request.form.get("phone", "Unknown")
-    education = request.form.get("education", "Unknown")
+    courses= request.form.get("courses", "Unknown")
     experience = request.form.get("experience", "Unknown")
 
     skill_vector = vectorizer.transform([skills])
     predicted_job = model.predict(skill_vector)[0]
 
-    save_to_db(name, email, phone, education, skills, experience, predicted_job)
+    save_to_db(name, email, phone, courses, skills, experience, predicted_job)
 
     # Get recommended projects (always returns up to 3)
     recommended_projects = recommend_projects(predicted_job, skills)
